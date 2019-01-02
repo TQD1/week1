@@ -10,3 +10,33 @@
     @include box_flex;
     @include direction(column);
 }
+
+section {
+    width: 100%;
+    @include flex;
+    @include center(center);
+    @include align;
+    @include justify;
+    padding-top: pxTorem(150px);
+    img {
+        padding: pxTorem(10px) 0;
+    }
+}
+
+footer {
+    padding: 0 pxTorem(20px);
+    width: 100%;
+    height: pxTorem(150px);
+    @include box_flex;
+    @include align;
+    @include justify(space-between);
+    @include center(center);
+    font-size: pxTorem(15px);
+    dl {
+        dd {
+            img {
+                width: pxTorem(50px);
+            }
+        }
+    }
+}
